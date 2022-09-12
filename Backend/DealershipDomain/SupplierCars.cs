@@ -12,5 +12,6 @@ namespace DealershipDomain
         public Supplier Supplier { get; set; }
         public Car Car { get; set; }
         public decimal BasePrice { get; set; }
+        public List<SupplierDealershipSales> SupplierDealershipSales { get; set; }
     }
 }

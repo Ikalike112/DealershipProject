@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace DealershipDomain
 {
-    public class DealershipCustomerSales
+    public class DealershipCustomerSales : BaseClass
     {
         public Guid Id { get; set; }
         public DealershipModels DealershipModel { get; set; }
-        public Customer Customer { get; set; }
+        public CustomerOffers CustomerOffers { get; set; }
+        public decimal Price { get; set; }
         public decimal PriceWithDiscount { get; set; }
         public DealershipDiscount Discount { get; set; }
     }

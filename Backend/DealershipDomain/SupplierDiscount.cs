@@ -15,6 +15,6 @@ namespace DealershipDomain
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Description { get; set; }
-        public string IdCars { get; set; }
+        public List<string> IdCars { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace DealershipDomain
         public Dealership Dealership { get; set; }
         public int Amount { get; set; }
         public decimal Price { get; set; }
+        public List<DealershipCustomerSales> DealershipCustomerSales { get; set; }
         
     }
 }

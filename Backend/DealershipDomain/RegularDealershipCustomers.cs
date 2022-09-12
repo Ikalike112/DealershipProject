@@ -8,6 +8,7 @@ namespace DealershipDomain
 {
     public class RegularDealershipCustomers
     {
+        public Guid Id { get; set; }
         public Dealership Dealership { get; set; }
         public Customer Customer { get; set; }
         public int PurchaseAmount { get; set; }
