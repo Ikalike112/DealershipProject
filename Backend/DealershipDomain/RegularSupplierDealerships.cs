@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DealershipDomain
 {
-    public class RegularSupplierDealership
+    public class RegularSupplierDealerships
     {
+        public Guid Id { get; set; }
         public Supplier Supplier { get; set; }
         public Dealership Dealership { get; set; }
         public int PurchaseAmount { get; set; }

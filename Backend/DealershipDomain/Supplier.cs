@@ -11,5 +11,8 @@ namespace DealershipDomain
         public Guid Id { get; set; }
         public string Name { get; set; }
         public int FoundationYear { get; set; }
+        public List<SupplierDiscount> SupplierDiscount { get; set; }
+        public List<SupplierCars> SupplierCars { get; set; }
+        public List<RegularSupplierDealerships> RegularSupplierDealerships { get; set; }
     }
 }
