@@ -27,14 +27,14 @@ namespace DealershipDatabase
         public DbSet<SupplierCars> SupplierCars { get; set; }
         public DbSet<SupplierDealershipSales> SupplierDealershipSales { get; set; }
         public DbSet<SupplierDiscount> SupplierDiscounts { get; set; }
-        public AppDbContext(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            base.OnModelCreating(builder);
         }
         
     }
